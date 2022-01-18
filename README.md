@@ -1,27 +1,101 @@
-# Typescript Library Starter
+# UDSM DHIS2 Lab Interview 2022
 
-[![Build Status](https://travis-ci.org/rajey/typescript-library-starter.svg?branch=master)](https://travis-ci.org/rajey/typescript-library-starter) [![Maintainability](https://api.codeclimate.com/v1/badges/2453f31853bf80cca1cf/maintainability)](https://codeclimate.com/github/rajey/typescript-library-starter/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/2453f31853bf80cca1cf/test_coverage)](https://codeclimate.com/github/rajey/typescript-library-starter/test_coverage)
+## Question 1
 
-Typescript based boilerplate for developing javascript library in typescript. This lets you write your codes in typescript to take advantage of the language features and in the end build the library that can be accessed/used in following ways;
+DHI2 Club is a club that aims at providing avenue for students to have opportunity to explore different technologies centered around DHIS2 platform. Since its start, number of members have been registered and active ones identified. Registration and activeness data are to be regularly entered by club’s chairman as aggregate number in the system. The regularity of data entry is being measured by reporting rate metrics and the higher the metrics the better result
 
-- ES2015 module. i.e. `import <somethingFromLibrary> from 'libraryName'`
+In order to measure the effectiveness of the club over 3 years, data for 3 years as shown in table below have to be compared given some criterions and final results can be produced as;
 
-- CommonJS module. i.e. `require('libraryName')`
+yearOneData
 
-- Global variable when included through `script` tag
+```
+[
+  {
+    "value": 10,
+    "name": "Number of members registered",
+    "code": "MEMBER_REGISTERED",
+    "reportingRate": "10"
+  },
+  {
+    "value": 9,
+    "name": "Number of active members",
+    "code": "ACTIVE_MEMBERS",
+    "reportingRate": "50"
+  }
+]
 
-# Installation
+```
 
-Run `npm install` to install all necessary packages to start the library
+yearTwoData
 
-# Building a library
+```
+[
+  {
+    "value": 30,
+    "name": "Number of members registered",
+    "code": "MEMBER_REGISTERED",
+    "reportingRate": "70"
+  },
+  {
+    "value": 25,
+    "name": "Number of active members",
+    "code": "ACTIVE_MEMBERS",
+    "reportingRate": "90"
+  }
+]
 
-Run `npm run build` to build the library. Build artifacts will be stored in the `dist/` directory.
+```
 
-# Running unit tests
+yearThreeData
 
-Run `npm test` to execute the unit test, this starter is configured with [jest](https://jestjs.io/docs/en/getting-started)
+```
+[
+  {
+    "value": 56,
+    "name": "Number of members registered",
+    "code": "MEMBER_REGISTERED",
+    "reportingRate": "70"
+  },
+  {
+    "value": 43,
+    "name": "Number of active members",
+    "code": "ACTIVE_MEMBERS",
+    "reportingRate": "20"
+  }
+]
+```
 
-# Documentation
+## Criterias
 
-Run `npm run docs` to generate your library documentations. Documentation pages will be store in `docs/` directory.
+1. Data with Reporting rate greater or equal to 50% (>=50) will be taken for final procesing
+
+2. In order to arrive to final output, average of data items that meet reporting date criteria should be taken as shown below;
+
+### Final Results (output)
+
+```
+[
+  {
+    "value": 43,
+    "name": "Number of members registered",
+    "code": "MEMBER_REGISTERED"
+  },
+  {
+    "value": 17,
+    "name": "Number of active members",
+    "code": "ACTIVE_MEMBERS"
+  }
+]
+
+```
+
+## Assignment
+
+Develop a javascript/typescript script to process the provided inputs (yearOneData, yearTwoData, yearThreeData) and produce the above output. Your script should be test driven .i.e. You must use automated tests to verify your code. We have provided a boilerplate codebase with all necessary tools for this question, find the boilerplate code here
+
+**NOTE:**
+
+1. Be original (Do not copy code from others)
+2. Follow coding and testing conventions
+3. Write clean and readable codes
+4. Have Fun!

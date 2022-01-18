@@ -1,7 +1,0 @@
-version: '2'
-exclude_paths:
-  - 'docs'
-  - 'dist'
-  - '**/*.log'
-  - '**/*.ico'
-  - '**/*.spec.ts'
