@@ -93,6 +93,16 @@ yearThreeData
 
 Develop a javascript/typescript script to process the provided inputs (yearOneData, yearTwoData, yearThreeData) and produce the above output. Your script should be test driven .i.e. You must use automated tests to verify your code. We have provided a boilerplate codebase with all necessary tools for this question, find the boilerplate code here
 
+### Running the script
+
+1. clone the script from the repo `git clone https://github.com/dhis2-club-tanzania/udsm-lab-interview-2022.git`
+
+2. Run `npm install` to install all necessary packages to run the script"
+
+3. Run `npm test` to test your script
+
+4. Submit your completed code into your own github account and shared the link as directed
+
 **NOTE:**
 
 1. Be original (Do not copy code from others)
