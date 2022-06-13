@@ -1,3 +1,5 @@
+const lib = require('../../index');
+
 export function getProcessedData(
   yearOneData: any,
   yearTwoData: any,
@@ -23,5 +25,5 @@ export function getProcessedData(
     ]
    */
 
-  return;
+  return lib.calcAvgElligibleDataItems(yearOneData, yearTwoData, yearThreeData);
 }
