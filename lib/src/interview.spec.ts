@@ -1,5 +1,5 @@
 import { getProcessedData } from './interview';
-const lib = require('../../index');
+const lib = require('../../solution');
 describe('Given list of 3 year data for DHIS2 Club membership', () => {
   const yearOneData = [
     {

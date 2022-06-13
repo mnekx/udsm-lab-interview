@@ -1,4 +1,4 @@
-const lib = require('../../index');
+const lib = require('../../solution');
 
 export function getProcessedData(
   yearOneData: any,
